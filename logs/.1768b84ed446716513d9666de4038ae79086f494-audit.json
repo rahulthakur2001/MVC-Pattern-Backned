@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "D:\\DevZone\\Backend\\logs\\.1768b84ed446716513d9666de4038ae79086f494-audit.json",
+    "files": [
+        {
+            "date": 1782732081937,
+            "name": "D:\\DevZone\\Backend\\logs\\error-2026-06-29.log",
+            "hash": "e23df3cad180b45c10cb2071994d1725179f8d188aed0397d6290d4ed97c2b4f"
+        },
+        {
+            "date": 1782986713688,
+            "name": "D:\\DevZone\\Backend\\logs\\error-2026-07-02.log",
+            "hash": "084809ac0453b7de413c8e7fdf62719a152b1bb737fb8ecced29c5d665c8fa25"
+        },
+        {
+            "date": 1783317058173,
+            "name": "D:\\DevZone\\Backend\\logs\\error-2026-07-06.log",
+            "hash": "184cd3894673f044b857f58453146643022c773f3ce60b4c286a510b6b1ecc84"
+        }
+    ],
+    "hashType": "sha256"
+}

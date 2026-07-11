@@ -66,6 +66,8 @@ userSchema.methods.caomparePassword = async function (candidatePassword) {
   return bcrypt.compare(candidatePassword, this.password);
 };
 
+
+ 
 userSchema.methods.generateAccessToken = function generateAccessToken(){
   return jwt.sign({
     id:this._id,

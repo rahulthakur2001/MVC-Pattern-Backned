@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const bcrypt = require('bcryptjs');
 const config  = require("../config/env");
+const jwt =require('jsonwebtoken');
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -56,9 +57,14 @@ const userSchema = new mongoose.Schema({
 
 userSchema.index({role:1, isActive: 1});
 
-userSchema.pre('save', async function hashPassowrd(next) {
-  if(!this.isModified('password')) return next();
-  this.password = await bcrypt.hash(this.password, config.bcryptSaltRounds);
+
+userSchema.pre("save", async function hashPassword() {
+  if (!this.isModified("password")) return;
+
+  this.password = await bcrypt.hash(
+    this.password,
+    Number(config.bcryptSaltRounds),
+  );
 });
  
 
@@ -79,13 +85,17 @@ userSchema.methods.generateAccessToken = function generateAccessToken(){
 };
 
 
-userSchema.methods.generateRefreshToken =  async function(){
-  return jwt.sign({
-    id:this._id,
-    role:this.role,
-  },config.jwt.refreshSecret,{
-    expiresIn:config.jwt.refreshExpiresIn
-  });
+userSchema.methods.generateRefreshToken = function () {
+  return jwt.sign(
+    {
+      id: this._id,
+      role: this.role,
+    },
+    config.jwt.refreshSecret,
+    {
+      expiresIn: config.jwt.refreshExpiresIn,
+    },
+  );
 };
 
 

@@ -6,11 +6,6 @@
     "auditLog": "D:\\DevZone\\Backend\\logs\\.4e0afb914062a03fa8d252576c45796eddb1a6a1-audit.json",
     "files": [
         {
-            "date": 1782732081935,
-            "name": "D:\\DevZone\\Backend\\logs\\app-2026-06-29.log",
-            "hash": "805b173ac16a4bfdc8a9b1327cd04ea06dc425e60fdfef83c84bc3bbf2d6861d"
-        },
-        {
             "date": 1782986713683,
             "name": "D:\\DevZone\\Backend\\logs\\app-2026-07-02.log",
             "hash": "ba2ad2c126745bc60433df6f205173c24fccfecc893f9df1dd1e52ebd2b920a6"
@@ -19,6 +14,16 @@
             "date": 1783317058162,
             "name": "D:\\DevZone\\Backend\\logs\\app-2026-07-06.log",
             "hash": "d7f92c00afb9731003953807953971e2d57b4130bd70f64867d38a9d891d0d89"
+        },
+        {
+            "date": 1783942977011,
+            "name": "D:\\DevZone\\Backend\\logs\\app-2026-07-13.log",
+            "hash": "5e0ed978a61a874ee9192fae9d3fabad848d3f8e407e171aee5e049878d4dd2e"
+        },
+        {
+            "date": 1784007264907,
+            "name": "D:\\DevZone\\Backend\\logs\\app-2026-07-14.log",
+            "hash": "5358a23202bb02ad185a5bf2a7d57118c7fbd5475addd768ff205d14ed597ffd"
         }
     ],
     "hashType": "sha256"
